@@ -1,4 +1,4 @@
-Version 3/161018 of Inline Hyperlinks (for Glulx only) by Erik Temple begins here.
+Version 3/180906 of Inline Hyperlinks (for Glulx only) by Erik Temple begins here.
 
 "Provides a simple, HTML-inspired syntax for adding hyperlinks within say phrases. No manual management of hyperlinks required. Requires Text Capture by Eric Eve. Works seamlessly with, but does not require, Flexible Windows."
 
@@ -6,6 +6,7 @@ Chapter 0 - Inclusions
 
 Include Glulx Entry Points by Emily Short.
 Include Text Capture by Eric Eve.
+Include Hyperlinks by Dannii Willis.
 
 Chapter 1 - Basic hyperlink control (for use without Flexible Windows by Jon Ingold)
 
@@ -103,7 +104,7 @@ A hyperlink processing rule (this is the default command replacement by hyperlin
 
 Chapter 2 - Replace Flexible Windows hyperlink handling if necessary (for use with Flexible Windows by Jon Ingold)
 
-Section - Code for placing links (replaces Section - Placing hyperlinks in  Flexible Windows by Jon Ingold)
+Section - Code for placing links
 
 The hyperlink list is a list of text variables.
 
@@ -142,14 +143,16 @@ To say terminate link:
 	(-  if (glk_gestalt(gestalt_Hyperlinks, 0)) glk_set_hyperlink(0); -)
 
 
-Section - Code for selecting the replacement command (replaces Section - Selecting the replacement command in Flexible Windows by Jon Ingold)
+Chapter 3 - Replace Hyperlinks  handling if necessary (for use with Hyperlinks by Dannii Willis)
 
-A hyperlink processing rule (this is the default command replacement by hyperlinks rule):  
-	now the glulx replacement command is entry (current hyperlink ID) of the hyperlink list;
+Section - Selecting the replacement command (in place of Section - Selecting the replacement command in Hyperlinks by Dannii Willis)
+
+Last for processing hyperlinks (this is the default hyperlink command replacement rule):  
+	now the glulx replacement command is entry (hyperlink ID) of the hyperlink list;
 	rule succeeds.
 
 
-Chapter 3a - Debugging (not for release)
+Chapter 4a - Debugging (not for release)
 
 Section - Previewing the hyperlink list (for use without Extended Debugging by Erik Temple)
 
@@ -166,7 +169,7 @@ To display (L - a list of text) using indices:
 		increase count by 1.
 
 
-Chapter 3b - Debugging (for use with Extended Debugging by Erik Temple)
+Chapter 4b - Debugging (for use with Extended Debugging by Erik Temple)
 
 Section - Previewing the hyperlinks list
 
@@ -183,7 +186,7 @@ To display (L - a list of text) using indices:
 		increase count by 1.
 
 
-Chapter 4 - Manually reserving entries in the hyperlink list
+Chapter 5 - Manually reserving entries in the hyperlink list
 
 To reserve (N - a number) slots in/of/at the/-- beginning/-- of/-- the/-- hyperlink command/-- list:
 	if the number of entries of the hyperlink list is greater than 0:
