@@ -1,4 +1,4 @@
-Version 3/161018 of Hyperlinks by Dannii Willis begins here.
+Version 2/180906 of Hyperlinks by Dannii Willis begins here.
 
 [ The old code from Flexible Windows ]
 
